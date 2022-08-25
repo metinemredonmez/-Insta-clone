@@ -1,0 +1,993 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1815782B28B74CDD00885BFE /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815782A28B74CDD00885BFE /* CameraViewController.swift */; };
+		1815782D28B74CF700885BFE /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815782C28B74CF700885BFE /* ExploreViewController.swift */; };
+		1815782F28B74D2A00885BFE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815782E28B74D2A00885BFE /* HomeViewController.swift */; };
+		1815783128B74D5900885BFE /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815783028B74D5900885BFE /* NotificationsViewController.swift */; };
+		1815783328B74D7900885BFE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815783228B74D7900885BFE /* ProfileViewController.swift */; };
+		1815783828B74EFF00885BFE /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815783728B74EFF00885BFE /* EditProfileViewController.swift */; };
+		1815783A28B74F1D00885BFE /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815783928B74F1D00885BFE /* ListViewController.swift */; };
+		1815783C28B74F3C00885BFE /* PostEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815783B28B74F3C00885BFE /* PostEditorViewController.swift */; };
+		1815783E28B74F5400885BFE /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815783D28B74F5400885BFE /* PostViewController.swift */; };
+		1815784028B74F7100885BFE /* PublishPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815783F28B74F7100885BFE /* PublishPostViewController.swift */; };
+		1815784228B74F9200885BFE /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815784128B74F9200885BFE /* SearchResultViewController.swift */; };
+		1815784428B74FB300885BFE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815784328B74FB300885BFE /* SearchViewController.swift */; };
+		1815784628B74FCF00885BFE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815784528B74FCF00885BFE /* SettingsViewController.swift */; };
+		1815784828B74FEC00885BFE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815784728B74FEC00885BFE /* LoginViewController.swift */; };
+		1815784A28B7500600885BFE /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815784928B7500600885BFE /* RegistrationViewController.swift */; };
+		1815784C28B7502F00885BFE /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815784B28B7502F00885BFE /* Models.swift */; };
+		1815784E28B750D000885BFE /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815784D28B750D000885BFE /* AuthManager.swift */; };
+		1815785028B750E800885BFE /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815784F28B750E800885BFE /* DatabaseManager.swift */; };
+		1815785228B7510300885BFE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815785128B7510300885BFE /* Extensions.swift */; };
+		1815785428B7511D00885BFE /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815785328B7511D00885BFE /* StorageManager.swift */; };
+		1815785628B7521500885BFE /* NoNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815785528B7521500885BFE /* NoNotificationsView.swift */; };
+		1815785A28B7528800885BFE /* ProfileInfoHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815785928B7528800885BFE /* ProfileInfoHeaderCollectionReusableView.swift */; };
+		1815785C28B752A800885BFE /* ProfileTabsCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815785B28B752A800885BFE /* ProfileTabsCollectionReusableView.swift */; };
+		1815785F28B752D600885BFE /* UserFollowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815785E28B752D600885BFE /* UserFollowTableViewCell.swift */; };
+		1815786128B752ED00885BFE /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815786028B752ED00885BFE /* PhotoCollectionViewCell.swift */; };
+		1815786328B752FF00885BFE /* FormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815786228B752FF00885BFE /* FormTableViewCell.swift */; };
+		1815786628B7531E00885BFE /* NotificationFollowEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815786528B7531E00885BFE /* NotificationFollowEventTableViewCell.swift */; };
+		1815786828B7533400885BFE /* NotificationLikeEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815786728B7533400885BFE /* NotificationLikeEventTableViewCell.swift */; };
+		1815786B28B7535C00885BFE /* IGFeedPostActionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815786A28B7535C00885BFE /* IGFeedPostActionsTableViewCell.swift */; };
+		1815786D28B7537300885BFE /* IGFeedPostGeneralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815786C28B7537300885BFE /* IGFeedPostGeneralTableViewCell.swift */; };
+		1815786F28B7538A00885BFE /* IGFeedPostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815786E28B7538A00885BFE /* IGFeedPostHeaderTableViewCell.swift */; };
+		1815787128B753A100885BFE /* IGFeedPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815787028B753A100885BFE /* IGFeedPostTableViewCell.swift */; };
+		183D12D428B75DC00088DEEA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 183D12D328B75DC00088DEEA /* GoogleService-Info.plist */; };
+		18A21D8F28B6D5B30091196C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A21D8E28B6D5B30091196C /* AppDelegate.swift */; };
+		18A21D9128B6D5B30091196C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A21D9028B6D5B30091196C /* SceneDelegate.swift */; };
+		18A21D9628B6D5B30091196C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A21D9428B6D5B30091196C /* Main.storyboard */; };
+		18A21D9828B6D5B50091196C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A21D9728B6D5B50091196C /* Assets.xcassets */; };
+		18A21D9B28B6D5B50091196C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A21D9928B6D5B50091196C /* LaunchScreen.storyboard */; };
+		18A21DA628B6D5B50091196C /* InstaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A21DA528B6D5B50091196C /* InstaAppTests.swift */; };
+		18A21DB028B6D5B50091196C /* InstaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A21DAF28B6D5B50091196C /* InstaAppUITests.swift */; };
+		18A21DB228B6D5B50091196C /* InstaAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A21DB128B6D5B50091196C /* InstaAppUITestsLaunchTests.swift */; };
+		5D26E7CC99B309BC2A9B5AAC /* Pods_InstaApp_InstaAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78B0C0C65A3E8F727E60A9C3 /* Pods_InstaApp_InstaAppUITests.framework */; };
+		98CD0FBDCE92815D12E496AE /* Pods_InstaAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A20798FEA7003EEC6DE12D /* Pods_InstaAppTests.framework */; };
+		C1E2EDF240278ECC9F363A1A /* Pods_InstaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FDB8FA0B2A7C25C5916CDB /* Pods_InstaApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18A21DA228B6D5B50091196C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18A21D8328B6D5B30091196C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18A21D8A28B6D5B30091196C;
+			remoteInfo = InstaApp;
+		};
+		18A21DAC28B6D5B50091196C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18A21D8328B6D5B30091196C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18A21D8A28B6D5B30091196C;
+			remoteInfo = InstaApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1815782A28B74CDD00885BFE /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		1815782C28B74CF700885BFE /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		1815782E28B74D2A00885BFE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1815783028B74D5900885BFE /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		1815783228B74D7900885BFE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		1815783728B74EFF00885BFE /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		1815783928B74F1D00885BFE /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		1815783B28B74F3C00885BFE /* PostEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorViewController.swift; sourceTree = "<group>"; };
+		1815783D28B74F5400885BFE /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		1815783F28B74F7100885BFE /* PublishPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostViewController.swift; sourceTree = "<group>"; };
+		1815784128B74F9200885BFE /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		1815784328B74FB300885BFE /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		1815784528B74FCF00885BFE /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		1815784728B74FEC00885BFE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1815784928B7500600885BFE /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		1815784B28B7502F00885BFE /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		1815784D28B750D000885BFE /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		1815784F28B750E800885BFE /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		1815785128B7510300885BFE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1815785328B7511D00885BFE /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		1815785528B7521500885BFE /* NoNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNotificationsView.swift; sourceTree = "<group>"; };
+		1815785928B7528800885BFE /* ProfileInfoHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		1815785B28B752A800885BFE /* ProfileTabsCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabsCollectionReusableView.swift; sourceTree = "<group>"; };
+		1815785E28B752D600885BFE /* UserFollowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFollowTableViewCell.swift; sourceTree = "<group>"; };
+		1815786028B752ED00885BFE /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		1815786228B752FF00885BFE /* FormTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewCell.swift; sourceTree = "<group>"; };
+		1815786528B7531E00885BFE /* NotificationFollowEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFollowEventTableViewCell.swift; sourceTree = "<group>"; };
+		1815786728B7533400885BFE /* NotificationLikeEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationLikeEventTableViewCell.swift; sourceTree = "<group>"; };
+		1815786A28B7535C00885BFE /* IGFeedPostActionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostActionsTableViewCell.swift; sourceTree = "<group>"; };
+		1815786C28B7537300885BFE /* IGFeedPostGeneralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostGeneralTableViewCell.swift; sourceTree = "<group>"; };
+		1815786E28B7538A00885BFE /* IGFeedPostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		1815787028B753A100885BFE /* IGFeedPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostTableViewCell.swift; sourceTree = "<group>"; };
+		183D12D328B75DC00088DEEA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		18A21D8B28B6D5B30091196C /* InstaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A21D8E28B6D5B30091196C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18A21D9028B6D5B30091196C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		18A21D9528B6D5B30091196C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18A21D9728B6D5B50091196C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18A21D9A28B6D5B50091196C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18A21D9C28B6D5B50091196C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A21DA128B6D5B50091196C /* InstaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A21DA528B6D5B50091196C /* InstaAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaAppTests.swift; sourceTree = "<group>"; };
+		18A21DAB28B6D5B50091196C /* InstaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A21DAF28B6D5B50091196C /* InstaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaAppUITests.swift; sourceTree = "<group>"; };
+		18A21DB128B6D5B50091196C /* InstaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		23FDB8FA0B2A7C25C5916CDB /* Pods_InstaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C26A63B508A05C02F2A5F36 /* Pods-InstaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaApp.debug.xcconfig"; path = "Target Support Files/Pods-InstaApp/Pods-InstaApp.debug.xcconfig"; sourceTree = "<group>"; };
+		62A8AC815010B276DBAF3D61 /* Pods-InstaApp-InstaAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaApp-InstaAppUITests.release.xcconfig"; path = "Target Support Files/Pods-InstaApp-InstaAppUITests/Pods-InstaApp-InstaAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		71A20798FEA7003EEC6DE12D /* Pods_InstaAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		759BB8CC65062BC861A3DDD7 /* Pods-InstaAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaAppTests.debug.xcconfig"; path = "Target Support Files/Pods-InstaAppTests/Pods-InstaAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		78B0C0C65A3E8F727E60A9C3 /* Pods_InstaApp_InstaAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaApp_InstaAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		844BAF740D941110AB6CA866 /* Pods-InstaApp-InstaAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaApp-InstaAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-InstaApp-InstaAppUITests/Pods-InstaApp-InstaAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8D4E040C093DDFC61460DD8B /* Pods-InstaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaApp.release.xcconfig"; path = "Target Support Files/Pods-InstaApp/Pods-InstaApp.release.xcconfig"; sourceTree = "<group>"; };
+		98C3C285C6EFFE5FB5EEAD93 /* Pods-InstaAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaAppTests.release.xcconfig"; path = "Target Support Files/Pods-InstaAppTests/Pods-InstaAppTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18A21D8828B6D5B30091196C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1E2EDF240278ECC9F363A1A /* Pods_InstaApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A21D9E28B6D5B50091196C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98CD0FBDCE92815D12E496AE /* Pods_InstaAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A21DA828B6D5B50091196C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D26E7CC99B309BC2A9B5AAC /* Pods_InstaApp_InstaAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06A2FB41D8F3DB16C5A91BE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C26A63B508A05C02F2A5F36 /* Pods-InstaApp.debug.xcconfig */,
+				8D4E040C093DDFC61460DD8B /* Pods-InstaApp.release.xcconfig */,
+				844BAF740D941110AB6CA866 /* Pods-InstaApp-InstaAppUITests.debug.xcconfig */,
+				62A8AC815010B276DBAF3D61 /* Pods-InstaApp-InstaAppUITests.release.xcconfig */,
+				759BB8CC65062BC861A3DDD7 /* Pods-InstaAppTests.debug.xcconfig */,
+				98C3C285C6EFFE5FB5EEAD93 /* Pods-InstaAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1815782528B74B0900885BFE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18A21D9728B6D5B50091196C /* Assets.xcassets */,
+				1815785D28B752BC00885BFE /* Cells */,
+				1815785828B7527700885BFE /* CollectionView Headers */,
+				1815785728B7524D00885BFE /* Storyboards */,
+				1815785528B7521500885BFE /* NoNotificationsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1815782628B74B1800885BFE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				183D12D328B75DC00088DEEA /* GoogleService-Info.plist */,
+				18A21D8E28B6D5B30091196C /* AppDelegate.swift */,
+				18A21D9028B6D5B30091196C /* SceneDelegate.swift */,
+				1815784D28B750D000885BFE /* AuthManager.swift */,
+				1815784F28B750E800885BFE /* DatabaseManager.swift */,
+				1815785128B7510300885BFE /* Extensions.swift */,
+				1815785328B7511D00885BFE /* StorageManager.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1815782728B74B2200885BFE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1815784B28B7502F00885BFE /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1815782828B74B2800885BFE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1815783428B74EB100885BFE /* Other */,
+				1815782928B74CBE00885BFE /* Core Tabs */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1815782928B74CBE00885BFE /* Core Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				1815782A28B74CDD00885BFE /* CameraViewController.swift */,
+				1815782E28B74D2A00885BFE /* HomeViewController.swift */,
+				1815782C28B74CF700885BFE /* ExploreViewController.swift */,
+				1815783028B74D5900885BFE /* NotificationsViewController.swift */,
+				1815783228B74D7900885BFE /* ProfileViewController.swift */,
+			);
+			path = "Core Tabs";
+			sourceTree = "<group>";
+		};
+		1815783428B74EB100885BFE /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				1815783628B74ECC00885BFE /* General */,
+				1815783528B74EC300885BFE /* Onboarding */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		1815783528B74EC300885BFE /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				1815784728B74FEC00885BFE /* LoginViewController.swift */,
+				1815784928B7500600885BFE /* RegistrationViewController.swift */,
+			);
+			name = Onboarding;
+			sourceTree = "<group>";
+		};
+		1815783628B74ECC00885BFE /* General */ = {
+			isa = PBXGroup;
+			children = (
+				1815783728B74EFF00885BFE /* EditProfileViewController.swift */,
+				1815783928B74F1D00885BFE /* ListViewController.swift */,
+				1815783B28B74F3C00885BFE /* PostEditorViewController.swift */,
+				1815783D28B74F5400885BFE /* PostViewController.swift */,
+				1815783F28B74F7100885BFE /* PublishPostViewController.swift */,
+				1815784128B74F9200885BFE /* SearchResultViewController.swift */,
+				1815784328B74FB300885BFE /* SearchViewController.swift */,
+				1815784528B74FCF00885BFE /* SettingsViewController.swift */,
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		1815785728B7524D00885BFE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				18A21D9428B6D5B30091196C /* Main.storyboard */,
+				18A21D9928B6D5B50091196C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		1815785828B7527700885BFE /* CollectionView Headers */ = {
+			isa = PBXGroup;
+			children = (
+				1815785928B7528800885BFE /* ProfileInfoHeaderCollectionReusableView.swift */,
+				1815785B28B752A800885BFE /* ProfileTabsCollectionReusableView.swift */,
+			);
+			path = "CollectionView Headers";
+			sourceTree = "<group>";
+		};
+		1815785D28B752BC00885BFE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1815786928B7535000885BFE /* Home Feed & Post */,
+				1815786428B7531200885BFE /* Notifications */,
+				1815785E28B752D600885BFE /* UserFollowTableViewCell.swift */,
+				1815786028B752ED00885BFE /* PhotoCollectionViewCell.swift */,
+				1815786228B752FF00885BFE /* FormTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1815786428B7531200885BFE /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				1815786528B7531E00885BFE /* NotificationFollowEventTableViewCell.swift */,
+				1815786728B7533400885BFE /* NotificationLikeEventTableViewCell.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		1815786928B7535000885BFE /* Home Feed & Post */ = {
+			isa = PBXGroup;
+			children = (
+				1815786A28B7535C00885BFE /* IGFeedPostActionsTableViewCell.swift */,
+				1815786C28B7537300885BFE /* IGFeedPostGeneralTableViewCell.swift */,
+				1815786E28B7538A00885BFE /* IGFeedPostHeaderTableViewCell.swift */,
+				1815787028B753A100885BFE /* IGFeedPostTableViewCell.swift */,
+			);
+			path = "Home Feed & Post";
+			sourceTree = "<group>";
+		};
+		18A21D8228B6D5B30091196C = {
+			isa = PBXGroup;
+			children = (
+				18A21D8D28B6D5B30091196C /* InstaApp */,
+				18A21DA428B6D5B50091196C /* InstaAppTests */,
+				18A21DAE28B6D5B50091196C /* InstaAppUITests */,
+				18A21D8C28B6D5B30091196C /* Products */,
+				06A2FB41D8F3DB16C5A91BE9 /* Pods */,
+				89CC5A34F21825213B2670E4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18A21D8C28B6D5B30091196C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18A21D8B28B6D5B30091196C /* InstaApp.app */,
+				18A21DA128B6D5B50091196C /* InstaAppTests.xctest */,
+				18A21DAB28B6D5B50091196C /* InstaAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18A21D8D28B6D5B30091196C /* InstaApp */ = {
+			isa = PBXGroup;
+			children = (
+				1815782828B74B2800885BFE /* Controllers */,
+				1815782728B74B2200885BFE /* Models */,
+				1815782628B74B1800885BFE /* Resources */,
+				1815782528B74B0900885BFE /* Views */,
+				18A21D9C28B6D5B50091196C /* Info.plist */,
+			);
+			path = InstaApp;
+			sourceTree = "<group>";
+		};
+		18A21DA428B6D5B50091196C /* InstaAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				18A21DA528B6D5B50091196C /* InstaAppTests.swift */,
+			);
+			path = InstaAppTests;
+			sourceTree = "<group>";
+		};
+		18A21DAE28B6D5B50091196C /* InstaAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18A21DAF28B6D5B50091196C /* InstaAppUITests.swift */,
+				18A21DB128B6D5B50091196C /* InstaAppUITestsLaunchTests.swift */,
+			);
+			path = InstaAppUITests;
+			sourceTree = "<group>";
+		};
+		89CC5A34F21825213B2670E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23FDB8FA0B2A7C25C5916CDB /* Pods_InstaApp.framework */,
+				78B0C0C65A3E8F727E60A9C3 /* Pods_InstaApp_InstaAppUITests.framework */,
+				71A20798FEA7003EEC6DE12D /* Pods_InstaAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18A21D8A28B6D5B30091196C /* InstaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18A21DB528B6D5B50091196C /* Build configuration list for PBXNativeTarget "InstaApp" */;
+			buildPhases = (
+				ED3011781151B1B1A6BD89E0 /* [CP] Check Pods Manifest.lock */,
+				18A21D8728B6D5B30091196C /* Sources */,
+				18A21D8828B6D5B30091196C /* Frameworks */,
+				18A21D8928B6D5B30091196C /* Resources */,
+				85831876F878B24364755513 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstaApp;
+			productName = InstaApp;
+			productReference = 18A21D8B28B6D5B30091196C /* InstaApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18A21DA028B6D5B50091196C /* InstaAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18A21DB828B6D5B50091196C /* Build configuration list for PBXNativeTarget "InstaAppTests" */;
+			buildPhases = (
+				A505708FE77D32DD37CE519C /* [CP] Check Pods Manifest.lock */,
+				18A21D9D28B6D5B50091196C /* Sources */,
+				18A21D9E28B6D5B50091196C /* Frameworks */,
+				18A21D9F28B6D5B50091196C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18A21DA328B6D5B50091196C /* PBXTargetDependency */,
+			);
+			name = InstaAppTests;
+			productName = InstaAppTests;
+			productReference = 18A21DA128B6D5B50091196C /* InstaAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18A21DAA28B6D5B50091196C /* InstaAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18A21DBB28B6D5B50091196C /* Build configuration list for PBXNativeTarget "InstaAppUITests" */;
+			buildPhases = (
+				6548DA4A3FD6896565C2988B /* [CP] Check Pods Manifest.lock */,
+				18A21DA728B6D5B50091196C /* Sources */,
+				18A21DA828B6D5B50091196C /* Frameworks */,
+				18A21DA928B6D5B50091196C /* Resources */,
+				59158D778AD55DAE10E3FD1E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18A21DAD28B6D5B50091196C /* PBXTargetDependency */,
+			);
+			name = InstaAppUITests;
+			productName = InstaAppUITests;
+			productReference = 18A21DAB28B6D5B50091196C /* InstaAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18A21D8328B6D5B30091196C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					18A21D8A28B6D5B30091196C = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					18A21DA028B6D5B50091196C = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 18A21D8A28B6D5B30091196C;
+					};
+					18A21DAA28B6D5B50091196C = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 18A21D8A28B6D5B30091196C;
+					};
+				};
+			};
+			buildConfigurationList = 18A21D8628B6D5B30091196C /* Build configuration list for PBXProject "InstaApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18A21D8228B6D5B30091196C;
+			productRefGroup = 18A21D8C28B6D5B30091196C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18A21D8A28B6D5B30091196C /* InstaApp */,
+				18A21DA028B6D5B50091196C /* InstaAppTests */,
+				18A21DAA28B6D5B50091196C /* InstaAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18A21D8928B6D5B30091196C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A21D9B28B6D5B50091196C /* LaunchScreen.storyboard in Resources */,
+				183D12D428B75DC00088DEEA /* GoogleService-Info.plist in Resources */,
+				18A21D9828B6D5B50091196C /* Assets.xcassets in Resources */,
+				18A21D9628B6D5B30091196C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A21D9F28B6D5B50091196C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A21DA928B6D5B50091196C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59158D778AD55DAE10E3FD1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaApp-InstaAppUITests/Pods-InstaApp-InstaAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaApp-InstaAppUITests/Pods-InstaApp-InstaAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstaApp-InstaAppUITests/Pods-InstaApp-InstaAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6548DA4A3FD6896565C2988B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstaApp-InstaAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85831876F878B24364755513 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaApp/Pods-InstaApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaApp/Pods-InstaApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstaApp/Pods-InstaApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A505708FE77D32DD37CE519C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstaAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED3011781151B1B1A6BD89E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstaApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18A21D8728B6D5B30091196C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1815785A28B7528800885BFE /* ProfileInfoHeaderCollectionReusableView.swift in Sources */,
+				1815784428B74FB300885BFE /* SearchViewController.swift in Sources */,
+				1815783E28B74F5400885BFE /* PostViewController.swift in Sources */,
+				1815782B28B74CDD00885BFE /* CameraViewController.swift in Sources */,
+				1815782D28B74CF700885BFE /* ExploreViewController.swift in Sources */,
+				18A21D8F28B6D5B30091196C /* AppDelegate.swift in Sources */,
+				18A21D9128B6D5B30091196C /* SceneDelegate.swift in Sources */,
+				1815787128B753A100885BFE /* IGFeedPostTableViewCell.swift in Sources */,
+				1815784628B74FCF00885BFE /* SettingsViewController.swift in Sources */,
+				1815785F28B752D600885BFE /* UserFollowTableViewCell.swift in Sources */,
+				1815783128B74D5900885BFE /* NotificationsViewController.swift in Sources */,
+				1815786D28B7537300885BFE /* IGFeedPostGeneralTableViewCell.swift in Sources */,
+				1815785228B7510300885BFE /* Extensions.swift in Sources */,
+				1815784E28B750D000885BFE /* AuthManager.swift in Sources */,
+				1815786B28B7535C00885BFE /* IGFeedPostActionsTableViewCell.swift in Sources */,
+				1815783328B74D7900885BFE /* ProfileViewController.swift in Sources */,
+				1815785C28B752A800885BFE /* ProfileTabsCollectionReusableView.swift in Sources */,
+				1815784228B74F9200885BFE /* SearchResultViewController.swift in Sources */,
+				1815783C28B74F3C00885BFE /* PostEditorViewController.swift in Sources */,
+				1815785628B7521500885BFE /* NoNotificationsView.swift in Sources */,
+				1815786828B7533400885BFE /* NotificationLikeEventTableViewCell.swift in Sources */,
+				1815784A28B7500600885BFE /* RegistrationViewController.swift in Sources */,
+				1815786328B752FF00885BFE /* FormTableViewCell.swift in Sources */,
+				1815786628B7531E00885BFE /* NotificationFollowEventTableViewCell.swift in Sources */,
+				1815782F28B74D2A00885BFE /* HomeViewController.swift in Sources */,
+				1815784828B74FEC00885BFE /* LoginViewController.swift in Sources */,
+				1815784C28B7502F00885BFE /* Models.swift in Sources */,
+				1815783A28B74F1D00885BFE /* ListViewController.swift in Sources */,
+				1815783828B74EFF00885BFE /* EditProfileViewController.swift in Sources */,
+				1815784028B74F7100885BFE /* PublishPostViewController.swift in Sources */,
+				1815786F28B7538A00885BFE /* IGFeedPostHeaderTableViewCell.swift in Sources */,
+				1815786128B752ED00885BFE /* PhotoCollectionViewCell.swift in Sources */,
+				1815785028B750E800885BFE /* DatabaseManager.swift in Sources */,
+				1815785428B7511D00885BFE /* StorageManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A21D9D28B6D5B50091196C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A21DA628B6D5B50091196C /* InstaAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18A21DA728B6D5B50091196C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A21DB228B6D5B50091196C /* InstaAppUITestsLaunchTests.swift in Sources */,
+				18A21DB028B6D5B50091196C /* InstaAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18A21DA328B6D5B50091196C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18A21D8A28B6D5B30091196C /* InstaApp */;
+			targetProxy = 18A21DA228B6D5B50091196C /* PBXContainerItemProxy */;
+		};
+		18A21DAD28B6D5B50091196C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18A21D8A28B6D5B30091196C /* InstaApp */;
+			targetProxy = 18A21DAC28B6D5B50091196C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18A21D9428B6D5B30091196C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18A21D9528B6D5B30091196C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18A21D9928B6D5B50091196C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18A21D9A28B6D5B50091196C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18A21DB328B6D5B50091196C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18A21DB428B6D5B50091196C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18A21DB628B6D5B50091196C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C26A63B508A05C02F2A5F36 /* Pods-InstaApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6DV7YZY2XY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InstaApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.metinemre.InstaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18A21DB728B6D5B50091196C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D4E040C093DDFC61460DD8B /* Pods-InstaApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6DV7YZY2XY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InstaApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.metinemre.InstaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18A21DB928B6D5B50091196C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 759BB8CC65062BC861A3DDD7 /* Pods-InstaAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6DV7YZY2XY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.metinemre.InstaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstaApp.app/InstaApp";
+			};
+			name = Debug;
+		};
+		18A21DBA28B6D5B50091196C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98C3C285C6EFFE5FB5EEAD93 /* Pods-InstaAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6DV7YZY2XY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.metinemre.InstaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstaApp.app/InstaApp";
+			};
+			name = Release;
+		};
+		18A21DBC28B6D5B50091196C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 844BAF740D941110AB6CA866 /* Pods-InstaApp-InstaAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6DV7YZY2XY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.metinemre.InstaAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InstaApp;
+			};
+			name = Debug;
+		};
+		18A21DBD28B6D5B50091196C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62A8AC815010B276DBAF3D61 /* Pods-InstaApp-InstaAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6DV7YZY2XY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.metinemre.InstaAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InstaApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18A21D8628B6D5B30091196C /* Build configuration list for PBXProject "InstaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A21DB328B6D5B50091196C /* Debug */,
+				18A21DB428B6D5B50091196C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18A21DB528B6D5B50091196C /* Build configuration list for PBXNativeTarget "InstaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A21DB628B6D5B50091196C /* Debug */,
+				18A21DB728B6D5B50091196C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18A21DB828B6D5B50091196C /* Build configuration list for PBXNativeTarget "InstaAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A21DB928B6D5B50091196C /* Debug */,
+				18A21DBA28B6D5B50091196C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18A21DBB28B6D5B50091196C /* Build configuration list for PBXNativeTarget "InstaAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18A21DBC28B6D5B50091196C /* Debug */,
+				18A21DBD28B6D5B50091196C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18A21D8328B6D5B30091196C /* Project object */;
+}
