@@ -19,6 +19,8 @@ final class ProfileInfoHeaderCollectionReusableView: UICollectionReusableView {
 
     public weak var delegate: ProfileInfoHeaderCollectionReusableViewDelegate?
 
+    
+    //profile photo layout 
     private let profilePhotoImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.backgroundColor = .red
