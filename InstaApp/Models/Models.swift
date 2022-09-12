@@ -7,6 +7,8 @@
 
 import Foundation
 
+// butun model dosyalarını. Bastan tasarla 
+
 enum Gender {
     case male, female, other
 }
